@@ -23,7 +23,7 @@ def smooth(y, box_pts):
     y_smooth = np.convolve(y, box, mode='same')
     return y_smooth
 
-modes = np.loadtxt('./data/s4tess_00771_mode_table.dat', usecols=range(5))
+modes = np.loadtxt('./s4tess_00771_mode_table.dat', usecols=range(5))
 
 f = np.linspace(1.0, 4000.0, 40001)
 p = np.zeros_like(f) + 0.03
